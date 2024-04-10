@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import News from './News/News';
 import PersonalInfoClass from './PersonalInfo/PersonalInfoClass';
 import PersonalInfoFunc from './PersonalInfo/PersonalInfoFunc';
@@ -24,22 +25,18 @@ class App extends PureComponent {
 
   render() {
     return(
-      <>
-      <News />
-      <br/>
-      <br/>
-      <PersonalInfoClass />
-      <br/>
-      <PersonalInfoFunc />
-      <br/>
-      <CityClass />
-      <br/>
-      <CityFunc />
-      <br/>
-      <BookClass />
-      <br/>
-      <BookFunc />
-      </>
+      <Router>
+      <Routes>
+          <Route path="/" element={<News />}/>
+          <Route  path="PersonalInfoClass" element={<PersonalInfoClass />} />
+          <Route path="PersonalInfo" element={<PersonalInfoFunc />} />
+          <Route path="CityClass" element={<CityClass />} />
+          <Route path="CityFunc" element={ <CityFunc />} />
+          <Route path="BookClass" element={ <BookClass />} />
+          <Route path="BookFunc" element={ <BookFunc />} />
+          
+      </Routes>
+    </Router>
     )
 
   }
