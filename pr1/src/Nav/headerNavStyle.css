@@ -1,0 +1,22 @@
+header{
+    position: relative;
+    background-color: darkmagenta;
+    margin: 20px;
+   
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav
+{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}

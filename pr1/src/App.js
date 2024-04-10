@@ -7,6 +7,8 @@ import CityClass from './city/cityClass';
 import CityFunc from './city/cityFunc';
 import BookClass from './Book/bookClass';
 import BookFunc from './Book/bookFunc';
+import Nav from './Nav/Nav';
+
 
 
 
@@ -25,18 +27,20 @@ class App extends PureComponent {
 
   render() {
     return(
-      <Router>
-      <Routes>
-          <Route path="/" element={<News />}/>
-          <Route  path="PersonalInfoClass" element={<PersonalInfoClass />} />
-          <Route path="PersonalInfo" element={<PersonalInfoFunc />} />
-          <Route path="CityClass" element={<CityClass />} />
-          <Route path="CityFunc" element={ <CityFunc />} />
-          <Route path="BookClass" element={ <BookClass />} />
-          <Route path="BookFunc" element={ <BookFunc />} />
-          
-      </Routes>
-    </Router>
+     <> <Nav/>
+
+     <Router>
+     <Routes>
+         <Route path="/" element={<News />}/>
+         <Route  path="PersonalInfoClass" element={<PersonalInfoClass />} />
+         <Route path="PersonalInfoFunc" element={<PersonalInfoFunc />} />
+         <Route path="CityClass" element={<CityClass />} />
+         <Route path="CityFunc" element={ <CityFunc />} />
+         <Route path="BookClass" element={ <BookClass />} />
+         <Route path="BookFunc" element={ <BookFunc />} />
+         
+     </Routes>
+   </Router></>
     )
 
   }
