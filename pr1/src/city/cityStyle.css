@@ -1,0 +1,18 @@
+.city
+{
+  height: 500px;
+}
+
+
+.Images
+{
+    display:flex;
+    flex-direction: row;
+}
+
+
+
+img {
+    margin: 5px;
+    height: 250px;
+  }
