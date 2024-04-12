@@ -1,12 +1,13 @@
-import React from 'react';
 import ParentComponent from './parentComponent/parentComponent';
+import Component from './HomeWork/Component';
 
 
 function App() {
   return (
-    <div className="App">
-      <ParentComponent />
-    </div>
+    <>
+    <ParentComponent />
+    <Component/>
+    </>
   );
 }
 
